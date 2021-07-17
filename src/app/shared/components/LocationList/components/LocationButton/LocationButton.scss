@@ -1,0 +1,48 @@
+@import "../../../../../../styles/colors.scss";
+@import "../../../../../../styles/constants.scss";
+
+.location-button {
+  cursor: pointer;
+
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  border: none;
+  border-radius: 50px;
+  box-shadow: $box-shadow;
+  box-sizing: border-box;
+
+  padding: 10px 20px;
+  white-space: nowrap;
+
+  transition: all 0.3s;
+
+  &__address {
+    font-size: 18px;
+    white-space: nowrap;
+  }
+  &__time {
+    font-size: 16px;
+    margin-top: 3px;
+
+    color: $muted-color-light;
+  }
+
+  &_active {
+    background-color: $error-color;
+    color: white;
+
+    transition: all 0.3s;
+    .location-button__address {
+      color: white;
+    }
+
+    .location-button__time {
+      color: $muted-color-middle;
+    }
+  }
+}

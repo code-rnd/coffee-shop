@@ -1,0 +1,27 @@
+@import "../../../../styles/colors.scss";
+@import "../../../../styles/constants.scss";
+
+.shopping-basket {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  height: 60px;
+  min-width: 100px;
+
+  padding: 0 15px;
+
+  box-sizing: border-box;
+
+  border: none;
+  border-radius: 50px;
+  box-shadow: $box-shadow;
+
+  color: white;
+
+  background-color: $custom-black;
+}

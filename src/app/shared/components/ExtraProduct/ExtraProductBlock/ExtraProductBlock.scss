@@ -1,0 +1,52 @@
+@import "../../../../../styles/colors.scss";
+@import "../../../../../styles/constants.scss";
+
+.extra-product-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__properties {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      height: $icon-extra-product-size;
+      width: $icon-extra-product-size;
+      object-fit: cover;
+
+      margin-right: 15px;
+    }
+
+    .properties {
+      &__title {
+        font-size: 15px;
+        font-weight: 500;
+      }
+      &__subTitle {
+        font-size: 14px;
+        color: $muted-color-light;
+      }
+    }
+  }
+}
+
+.extra-product-list__mode-horizontal {
+  .extra-product-block {
+    flex-direction: column;
+    margin-right: 10px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &__properties {
+      flex-direction: column;
+
+      img {
+        margin: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,1 @@
+export { ExtraProductBlock } from "./ExtraProductBlock";

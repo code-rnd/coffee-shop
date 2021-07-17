@@ -1,0 +1,76 @@
+@import "../../../../styles/colors.scss";
+@import "../../../../styles/constants.scss";
+@import "../../../../styles/classes.scss";
+
+.button {
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: black;
+  border-radius: 50px;
+  border: 2px solid black;
+
+  font-size: 19px;
+  font-weight: 500;
+
+  min-width: 86px;
+  height: 40px;
+
+  box-sizing: border-box;
+
+  outline: none;
+
+  white-space: nowrap;
+
+  &_disabled {
+    color: $muted-color;
+    border-color: $muted-color;
+  }
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-color: $error-color;
+
+  &__button {
+    @extend .display-flex;
+    color: $error-color;
+
+    font-weight: 500;
+    font-size: 26px;
+
+    padding-left: 5px;
+
+    &:last-child {
+      padding: 0 5px 0 0;
+    }
+  }
+  &__count {
+    @extend .display-flex;
+    align-items: center;
+  }
+}
+
+.extra-product-list__mode-horizontal {
+  .button {
+    height: 30px;
+  }
+  .button-group {
+    border: none;
+    &__button {
+      box-sizing: border-box;
+
+      padding: 0;
+      max-width: 30px;
+
+      border-radius: 150px;
+      border: 2px solid $error-color;
+    }
+  }
+}

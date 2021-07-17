@@ -1,0 +1,13 @@
+@import "../../../../../styles/colors.scss";
+
+.property-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-top: 1px solid $muted-color-border;
+  border-bottom: 1px solid $muted-color-border;
+
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
