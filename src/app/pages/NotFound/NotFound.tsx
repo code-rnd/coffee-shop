@@ -1,8 +1,8 @@
 import React, { FC, memo, useCallback } from "react";
 import { useHistory } from "react-router-dom";
 
-import { routerBuilder } from "../../routing/RouterBuilder";
-import { RouteUrls } from "../../routing/routing.enums";
+import { routerBuilder } from "app/routing/RouterBuilder";
+import { RouteUrls } from "app/routing/routing.enums";
 
 export const NotFound: FC = memo(() => {
   const history = useHistory();

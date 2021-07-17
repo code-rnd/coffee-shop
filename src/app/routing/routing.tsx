@@ -3,7 +3,7 @@ import { Route, Switch, Redirect } from "react-router-dom";
 
 import { RouteUrls } from "app/routing/routing.enums";
 import { Routes } from "app/routing/routing.const";
-import { NotFound } from "app/pages/NotFound";
+import {Products} from "app/pages/Products";
 
 export const Routing: FC = memo(() => {
   return (
@@ -18,7 +18,7 @@ export const Routing: FC = memo(() => {
             <Route exact={exact} path={path} component={component} key={key} />
           );
         })}
-        <Route component={NotFound} />
+        <Route component={Products} />
       </Switch>
     </>
   );
