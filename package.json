@@ -1,6 +1,8 @@
 {
+  "author": "https://github.com/code-rnd",
   "name": "coffee-go",
   "version": "0.1.0",
+  "homepage": "/coffee-shop",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "5.11.4",
